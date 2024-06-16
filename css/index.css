@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px; /* ancho del scroll */
+    border-radius: 5px; /* radio de borde del scroll */
+  }
+  
+  /* track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* color de fondo del track */
+  }
+  
+  /* handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* color del handle del scroll */
+    border-radius: 5px; /* radio de borde del handle del scroll */
+  }
+  
+  /* handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* color del handle del scroll al pasar el mouse sobre él */
+  }
+  
+
+/* FUENTES 
+    font-family: "Rubik", sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-family: "Roboto", sans-serif; 
+    font-family: "Raleway", sans-serif;
+*/
+
+body{
+    background-color: #fff;
+}
+
+/* GLOBALES */
+
+h1.hero-title, h2.services-title{
+    font-family: "Oswald", sans-serif;    
+}
+
+img{
+    width: 100%;
+}
+
+/* HEADER */
+header{
+    z-index: 1;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background-color: #ffffffd2;
+    /* padding: 1.5rem 2.1rem; */
+}
+
+.logo{
+    width: 15rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 1.4rem;
+    list-style-type: none;
+}
+
+nav ul li a{
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #0f6fad;
+
+}
+
+/* MAIN */
+
+/* HERO */
+
+#hero{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.hero-description p{
+    font-family: 'Rubik', sans-serif; 
+
+}
+
+.hero-button{
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-button button, .card button{
+    color: #fff;
+    background-color: #0f6fad;
+    border: 3px solid #0f6fad;
+    padding: .5rem 1rem;
+    border-radius: 60px;
+    transition: .3s all ease;
+    font-family: "Raleway", sans-serif;
+}
+
+.hero-button button:hover, .card button:hover{
+    color: #0f6fad;
+    background-color: #fff;
+}
+
+.hero-image{
+    width: 25rem;
+}
+
+/* SLIDER */
+#slider{
+    height: 10rem;
+    background-color: #0f6fad;
+}
+
+/* SERVICES */
+
+#services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    padding: 2rem 0;
+}
+
+    /* Cards */
+
+    .card-group{
+        display: flex;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .card-img{
+        width: 100px;
+    }
+
+    .service-img{
+        width: 25rem;
+    }
+
+    .service h2{
+        font-family: 'Oswald', sans-serif;
+    }
+
+/* PRECIOS */
+
+#precios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    padding: 2rem 0;
+}
+
+#precios h2{
+    font-family: 'Oswald', sans-serif;
+}
+
+#precios .card-group{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.2rem;
+    padding: 2rem 0;
+}
+
+#precios .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem 2.5rem;
+    border: 1px solid #636363;
+    border-radius: 15px;
+    transition: all .5s ease;
+}
+
+.plan{
+    font-family: "Oswald", sans-serif;
+}
+
+.card .precio{
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.card-group .card:hover{
+    transform: translateY(-10px);
+}
+
+.card .descripcion ul li{
+    font-family: "rubik", sans-serif;
+}
