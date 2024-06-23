@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 *, *::after, *::before{
     margin: 0;
@@ -32,10 +33,10 @@
   
 
 /* FUENTES 
-    font-family: "Rubik", sans-serif;
     font-family: "Oswald", sans-serif;
     font-family: "Roboto", sans-serif; 
     font-family: "Raleway", sans-serif;
+    font-family: "Inter", sans-serif;
 */
 
 body{
@@ -104,8 +105,7 @@ nav ul li a:hover{
 }
 
 .hero-description p{
-    font-family: 'Rubik', sans-serif; 
-
+    font-family: "Inter", sans-serif;
 }
 
 .hero-button{
@@ -228,5 +228,5 @@ nav ul li a:hover{
 }
 
 .card .descripcion ul li{
-    font-family: "rubik", sans-serif;
+    font-family: "Inter", sans-serif;
 }
