@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../css/normalize.css">
+    <link rel="stylesheet" href="./../css/index.css">
+    <script src="https://kit.fontawesome.com/696cba56fe.js" crossorigin="anonymous"></script>
+    <title>Precios</title>
+</head>
+
+<body>
+    <header class="sticky-top">
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="./../index.html">Inicio</a></li>
+                    <li><a href="./prices.html">Precios</a></li>
+                    <li><a href="./services.html">Servicios</a></li>
+                    <li><a href="#">Foro</a></li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <img class="img-fluid" src="./../assets/logo.png" alt="logo">
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <main class="container-fluid prices-document">
+        <h1 class="title">Precios</h1>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="software-tab" data-bs-toggle="tab"
+                    data-bs-target="#software-tab-pane" type="button" role="tab" aria-controls="software-tab-pane"
+                    aria-selected="true">Software</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="curse-tab" data-bs-toggle="tab" data-bs-target="#curse-tab-pane"
+                    type="button" role="tab" aria-controls="curse-tab-pane" aria-selected="false">Cursos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="support-tab" data-bs-toggle="tab" data-bs-target="#support-tab-pane"
+                    type="button" role="tab" aria-controls="support-tab-pane" aria-selected="false">Soporte</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="software-tab-pane" role="tabpanel" aria-labelledby="software-tab"
+                tabindex="0">
+                <div class="container-tab">
+                    <div class="group-card">
+                        <div class="card" onclick="showBuyCard(1)">
+                            <div class="card-body">
+                                <h5 class="card-title">Basico</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">300$</h6>
+                                <p class="card-text">El plan básico ofrece acceso limitado a nuestras funciones
+                                    principales y soporte técnico básico.</p>
+                            </div>
+                        </div>
+
+                        <div class="card" onclick="showBuyCard(2)">
+                            <div class="card-body">
+                                <h5 class="card-title">Standart</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">600$</h6>
+                                <p class="card-text">El plan estándar ofrece acceso completo a todas nuestras funciones
+                                    y soporte técnico prioritario.</p>
+                            </div>
+                        </div>
+
+                        <div class="card" onclick="showBuyCard(3)">
+                            <div class="card-body">
+                                <h5 class="card-title">Premium</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">900$</h6>
+                                <p class="card-text">El plan premium ofrece acceso completo a todas nuestras funciones,
+                                    soporte técnico prioritario y beneficios exclusivos.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-buy">
+                        <div class="content">
+                            <div class="title" id="title">Basico</div>
+                            <div class="price" id="price">300$</div>
+                            <div class="description" id="description">Plan básico con características esenciales</div>
+                        </div>
+                        <button>
+                            Buy now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="curse-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="container-tab">
+                    <div class="group-card">
+                        <div class="card" onclick="showBuyCard(1)">
+                            <div class="card-body">
+                                <h5 class="card-title">Basico</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">300$</h6>
+                                <p class="card-text">El plan básico ofrece acceso limitado a nuestras funciones
+                                    principales y soporte técnico básico.</p>
+                            </div>
+                        </div>
+
+                        <div class="card" onclick="showBuyCard(2)">
+                            <div class="card-body">
+                                <h5 class="card-title">Standart</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">600$</h6>
+                                <p class="card-text">El plan estándar ofrece acceso completo a todas nuestras funciones
+                                    y soporte técnico prioritario.</p>
+                            </div>
+                        </div>
+
+                        <div class="card" onclick="showBuyCard(3)">
+                            <div class="card-body">
+                                <h5 class="card-title">Premium</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">900$</h6>
+                                <p class="card-text">El plan premium ofrece acceso completo a todas nuestras funciones,
+                                    soporte técnico prioritario y beneficios exclusivos.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-buy">
+                        <div class="content">
+                            <div class="title" id="title">Basico</div>
+                            <div class="price" id="price">300$</div>
+                            <div class="description" id="description">Plan básico con características esenciales</div>
+                        </div>
+                        <button>
+                            Buy now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="support-tab-pane" role="tabpanel" aria-labelledby="support-tab" tabindex="0">
+                <div class="container-tab">
+                    <div class="group-card">
+                        <div class="card" onclick="showBuyCard(1)">
+                            <div class="card-body">
+                                <h5 class="card-title">Basico</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">300$</h6>
+                                <p class="card-text">El plan básico ofrece acceso limitado a nuestras funciones
+                                    principales y soporte técnico básico.</p>
+                            </div>
+                        </div>
+
+                        <div class="card" onclick="showBuyCard(2)">
+                            <div class="card-body">
+                                <h5 class="card-title">Standart</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">600$</h6>
+                                <p class="card-text">El plan estándar ofrece acceso completo a todas nuestras funciones
+                                    y soporte técnico prioritario.</p>
+                            </div>
+                        </div>
+
+                        <div class="card" onclick="showBuyCard(3)">
+                            <div class="card-body">
+                                <h5 class="card-title">Premium</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">900$</h6>
+                                <p class="card-text">El plan premium ofrece acceso completo a todas nuestras funciones,
+                                    soporte técnico prioritario y beneficios exclusivos.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-buy">
+                        <div class="content">
+                            <div class="title" id="title">Basico</div>
+                            <div class="price" id="price">300$</div>
+                            <div class="description" id="description">Plan básico con características esenciales</div>
+                        </div>
+                        <button>
+                            Buy now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./../js/script.js"></script>
+</body>
+
+</html>

@@ -15,7 +15,7 @@ let planArr = [
     `
 ]
 
-showContent(slider.value)
+showContent(0)
 
 function showContent(value){
     if(value == 0){
@@ -135,3 +135,30 @@ const swiper = new Swiper('.swiper', {
             },
         }
     });
+
+    function showBuyCard(i){
+        console.log(i);
+        let content = document.getElementsByClassName('card-price')
+        let title = document.getElementById('title')
+        let price = document.getElementById('price')
+        let description = document.getElementById('description')
+        switch(i){
+            case 1:
+                title.innerHTML = "Basico"
+                price.innerHTML = "300$"
+                description.innerHTML = "Plan básico con características esenciales"
+                break
+            case 2:
+                title.innerHTML = "Standart"
+                price.innerHTML = "600$"
+                description.innerHTML = "Plan estándar con características adicionales"
+                break
+            case 3:
+                title.innerHTML = "Premium"
+                price.innerHTML = "900$"
+                description.innerHTML = "Plan premium con todas las características y beneficios"
+                break
+        }
+    }
+
+    showBuyCard(1)
