@@ -294,6 +294,29 @@ nav ul li a:after {
     padding: 0 7rem;
 }
 
+@media only screen and (max-width: 992px) {
+    #why .reasons {
+        padding: 0 1rem;
+        justify-content: end;
+    }
+
+    #why .reason-container{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #why .reason-container{
+        width: 100%;
+    }
+
+    #image-reason{
+        display: none;
+    }
+    
+}
+
 .reason-title {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -341,6 +364,18 @@ nav ul li a:after {
     background-image: url(../assets/bg-price-1920x1128.png);
     background-color: #2c2c2c;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 992px) {
+    #prices {
+        padding: 2rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #prices {
+        padding: 2rem 2rem;
+    }
 }
 
 #plan {
@@ -438,6 +473,10 @@ input[type="range"] {
 
 @media only screen and (max-width: 768px) {
     .plan-images {
+        flex-direction: column;
+    }
+
+    #prices dl{
         flex-direction: column;
     }
 }
@@ -599,9 +638,10 @@ input[type="range"] {
     }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 320px) {
     .swiper-wrapper .swiper-slide img {
-        width: 20rem;
+        width: 10rem;
+        height: 10rem;
     }
 
     .swiper-slide {
@@ -655,6 +695,14 @@ input[type="range"] {
     align-items: center;
     gap: 8rem;
     width: 100%;
+    flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-group {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 
 .card-service {
@@ -807,6 +855,22 @@ input[type="range"] {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    .form-group {
+        width: 90%;
+    }
+
+    .contact-info {
+        width: 90%;
+    }
+}
+
 /* FOOTER */
 
 footer {
@@ -860,6 +924,10 @@ footer {
     width: 3rem;
 }
 
+.contact h2{
+    text-align: center;
+}
+
 .footer-contact-item .social a {
     color: #fff;
     text-decoration: none;
@@ -910,6 +978,30 @@ footer {
     color: #ffffffb3;
 }
 
+@media only screen and (max-width: 768px) {
+
+    .footer-contact-item, .footer-contact h2{
+        text-align: center;
+        width: 90%;
+    }
+
+    .footer-contact {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .list-contact {
+        flex-direction: column;
+        gap: 1rem;
+    }    
+
+    .about-us h2,
+    .about-us p {
+        text-align: center;
+    }
+}
+
+
 /* PRICES PAGE */
 
 .prices-document {
@@ -918,10 +1010,10 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    height: 90vh;
 }
 
 h1.title {
-    margin-top: 2rem;
     font-size: 2.2rem;
     font-weight: 700;
     text-align: center;
