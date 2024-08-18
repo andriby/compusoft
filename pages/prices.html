@@ -13,10 +13,12 @@
 </head>
 
 <body>
+    
     <header class="sticky-top">
         <div class="nav">
             <nav>
-                <ul>
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                <ul id="menu">
                     <li><a href="./../index.html">Inicio</a></li>
                     <li><a href="./prices.html">Precios</a></li>
                     <li><a href="./services.html">Servicios</a></li>
@@ -27,11 +29,20 @@
                 <img class="img-fluid" src="./../assets/logo.png" alt="logo">
             </div>
         </div>
+
+        <ul class="menu-responsive">
+            <li><a href="./../index.html">Inicio</a></li>
+            <li><a href="./prices.html">Precios</a></li>
+            <li><a href="./services.html">Servicios</a></li>
+            <li><a href="#">Foro</a></li>
+        </ul>
+        
         <hr>
     </header>
 
     <main class="container-fluid prices-document">
         <h1 class="title">Precios</h1>
+        <hr style="width: 80%">
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -99,7 +110,7 @@
             <div class="tab-pane fade" id="curse-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                 <div class="container-tab">
                     <div class="group-card">
-                        <div class="card" onclick="showBuyCard(1)">
+                        <div class="card" onclick="showBuyCard(4)">
                             <div class="card-body">
                                 <h5 class="card-title">Basico</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">300$</h6>
@@ -108,7 +119,7 @@
                             </div>
                         </div>
 
-                        <div class="card" onclick="showBuyCard(2)">
+                        <div class="card" onclick="showBuyCard(5)">
                             <div class="card-body">
                                 <h5 class="card-title">Standart</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">600$</h6>
@@ -117,7 +128,7 @@
                             </div>
                         </div>
 
-                        <div class="card" onclick="showBuyCard(3)">
+                        <div class="card" onclick="showBuyCard(6)">
                             <div class="card-body">
                                 <h5 class="card-title">Premium</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">900$</h6>
@@ -130,9 +141,9 @@
 
                     <div class="card-buy">
                         <div class="content">
-                            <div class="title" id="title">Basico</div>
-                            <div class="price" id="price">300$</div>
-                            <div class="description" id="description">Plan básico con características esenciales</div>
+                            <div class="title" id="title2">Basico</div>
+                            <div class="price" id="price2">300$</div>
+                            <div class="description" id="description2">Plan básico con características esenciales</div>
                         </div>
                         <button>
                             Buy now
@@ -143,7 +154,7 @@
             <div class="tab-pane fade" id="support-tab-pane" role="tabpanel" aria-labelledby="support-tab" tabindex="0">
                 <div class="container-tab">
                     <div class="group-card">
-                        <div class="card" onclick="showBuyCard(1)">
+                        <div class="card" onclick="showBuyCard(7)">
                             <div class="card-body">
                                 <h5 class="card-title">Basico</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">300$</h6>
@@ -152,7 +163,7 @@
                             </div>
                         </div>
 
-                        <div class="card" onclick="showBuyCard(2)">
+                        <div class="card" onclick="showBuyCard(8)">
                             <div class="card-body">
                                 <h5 class="card-title">Standart</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">600$</h6>
@@ -161,7 +172,7 @@
                             </div>
                         </div>
 
-                        <div class="card" onclick="showBuyCard(3)">
+                        <div class="card" onclick="showBuyCard(9)">
                             <div class="card-body">
                                 <h5 class="card-title">Premium</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">900$</h6>
@@ -174,9 +185,9 @@
 
                     <div class="card-buy">
                         <div class="content">
-                            <div class="title" id="title">Basico</div>
-                            <div class="price" id="price">300$</div>
-                            <div class="description" id="description">Plan básico con características esenciales</div>
+                            <div class="title" id="title3">Basico</div>
+                            <div class="price" id="price3">300$</div>
+                            <div class="description" id="description3">Plan básico con características esenciales</div>
                         </div>
                         <button>
                             Buy now

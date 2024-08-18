@@ -13,10 +13,11 @@
     <header class="sticky-top">
         <div class="nav">
             <nav>
-                <ul>
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                <ul id="menu">
                     <li><a href="./../index.html">Inicio</a></li>
                     <li><a href="./prices.html">Precios</a></li>
-                    <li><a href="#">Servicios</a></li>
+                    <li><a href="./services.html">Servicios</a></li>
                     <li><a href="#">Foro</a></li>
                 </ul>
             </nav>
@@ -24,6 +25,14 @@
                 <img class="img-fluid" src="./../assets/logo.png" alt="logo">
             </div>
         </div>
+
+        <ul class="menu-responsive">
+            <li><a href="./../index.html">Inicio</a></li>
+            <li><a href="./prices.html">Precios</a></li>
+            <li><a href="./services.html">Servicios</a></li>
+            <li><a href="#">Foro</a></li>
+        </ul>
+        
         <hr>
     </header>
 
