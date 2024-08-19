@@ -162,6 +162,10 @@ header ul li a {
     cursor: pointer;
 }
 
+.menu-responsive{
+    display: none;
+}
+
 @media (max-width: 768px) {
     #menu{
         display: none;
