@@ -1144,6 +1144,7 @@ h1.title {
     text-transform: uppercase;
     color: #2d2d2d;
     margin-bottom: -1rem;
+    letter-spacing: -0.02em;
 }
 
 .tab-content {
@@ -1319,4 +1320,54 @@ p.card-text {
     .card-buy{
         margin: 0;
     }
+}
+
+/* SERVICES DOCUMENT */
+
+.service-doc-title{
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: -0.02em;
+    color: #1a1a1b;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+}
+
+#services-document{
+    padding: 2rem 0;
+}
+
+#services-document .service-document{
+    font-family: 'Inter', sans-serif;
+    color: #00000099;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-bottom: 3.5rem;
+}
+
+@media only screen and (max-width: 768px){
+    #services-document .service-document{
+        flex-direction: column;
+    }
+}
+
+#services-document .service-document h2{
+    font-family: 'Poppins', sans-serif;
+    color: #3b3b3b;
+    font-size: 2.2rem;
+    letter-spacing: -0.02em;
+}
+
+.service-document-img{
+    min-width: 30%;
+}
+
+@media only screen and (max-width: 768px){
+    .service-document{
+        width: 100%;
+    }
+} 
+
+.service-document-img img{
+    width: 100%;
 }
