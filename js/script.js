@@ -200,20 +200,3 @@ function showBuyCard(i){
             break
     }
 }
-
-// Menu
-function toggleMenu(){
-    let button = document.getElementById('menu-toggle')
-    let menu = document.querySelector('.menu-responsive')
-    menu.classList.toggle('active')    
-    if (button.innerHTML == `☰`) {        
-        button.innerHTML = `
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.70711 6.29289C6.31658 5.90237 5.68342 5.90237 5.29289 6.29289C4.90237 6.68342 4.90237 7.31658 5.29289 7.70711L10.5858 13L5.29289 18.2929C4.90237 18.6834 4.90237 19.3166 5.29289 19.7071C5.68342 20.0976 6.31658 20.0976 6.70711 19.7071L12 14.4142L17.2929 19.7071C17.6834 20.0976 18.3166 20.0976 18.7071 19.7071C19.0976 19.3166 19.0976 18.6834 18.7071 18.2929L13.4142 13L18.7071 7.70711C19.0976 7.31658 19.0976 6.68342 18.7071 6.29289C18.3166 5.90237 17.6834 5.90237 17.2929 6.29289L12 11.5858L6.70711 6.29289Z" fill="black"/>
-            </svg>
-        `
-    } else {
-        button.innerHTML = `☰`
-        
-    }
-}

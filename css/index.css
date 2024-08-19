@@ -162,21 +162,16 @@ header ul li a {
     cursor: pointer;
 }
 
-.menu-responsive{
-    display: none;
-}
-
 @media (max-width: 768px) {
-    header ul {
+    #menu{
         display: none;
-        flex-direction: column;
-        width: 100%;
     }
 
-    header ul.active {
+    .menu-responsive {
         display: flex;
         padding: 1rem;
         border-top: 1px solid #C7C8C9;
+        flex-direction: column;
     }
 
     .menu-toggle {

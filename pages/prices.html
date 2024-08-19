@@ -17,7 +17,7 @@
     <header class="sticky-top">
         <div class="nav">
             <nav>
-                <button id="menu-toggle" class="menu-toggle" onclick="toggleMenu()">☰</button>
+                <button id="menu-toggle" class="menu-toggle"  data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">☰</button>
                 <ul id="menu">
                     <li><a href="./../index.html">Inicio</a></li>
                     <li><a href="./prices.html">Precios</a></li>
@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <ul class="menu-responsive">
+        <ul class="menu-responsive collapse" id="collapseExample">
             <li><a href="./../index.html">Inicio</a></li>
             <li><a href="./prices.html">Precios</a></li>
             <li><a href="./services.html">Servicios</a></li>
@@ -96,9 +96,11 @@
 
                     <div class="card-buy">
                         <div class="content">
-                            <div class="title" id="title">Basico</div>
-                            <div class="price" id="price">300$</div>
-                            <div class="description" id="description">Plan básico con características esenciales</div>
+                            <div class="title" style="margin-bottom: 1rem;" id="title">Basico</div>
+                            <hr>
+                            <div class="price"  style="margin: 1rem 0 1rem;" id="price">300$</div>
+                            <hr>
+                            <div class="description" style="margin-top: 1rem;"" id="description">Plan básico con características esenciales</div>
                         </div>
                         <button>
                             Buy now

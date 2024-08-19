@@ -16,7 +16,7 @@
     <header class="sticky-top">
         <div class="nav">
             <nav>
-                <button id="menu-toggle" class="menu-toggle" onclick="toggleMenu()">☰</button>
+                <button id="menu-toggle" class="menu-toggle"  data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">☰</button>
                 <ul id="menu">
                     <li><a href="./../index.html">Inicio</a></li>
                     <li><a href="./prices.html">Precios</a></li>
@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <ul class="menu-responsive">
+        <ul class="menu-responsive collapse" id="collapseExample">
             <li><a href="./../index.html">Inicio</a></li>
             <li><a href="./prices.html">Precios</a></li>
             <li><a href="./services.html">Servicios</a></li>
