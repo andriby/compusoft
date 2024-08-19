@@ -1332,6 +1332,12 @@ p.card-text {
     text-transform: uppercase;
 }
 
+@media only screen and (max-width: 768px){
+    .service-doc-title{
+        font-size: 2.2rem;
+    }
+}
+
 #services-document{
     padding: 2rem 0;
 }
@@ -1348,6 +1354,7 @@ p.card-text {
 @media only screen and (max-width: 768px){
     #services-document .service-document{
         flex-direction: column;
+        font-size: 1.1rem;
     }
 }
 
@@ -1356,6 +1363,12 @@ p.card-text {
     color: #3b3b3b;
     font-size: 2.2rem;
     letter-spacing: -0.02em;
+}
+
+@media only screen and (max-width: 768px){
+    #services-document .service-document h2{
+        font-size: 1.8rem;
+    }
 }
 
 .service-document-img{
