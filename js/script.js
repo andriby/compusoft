@@ -30,24 +30,24 @@ function showContent(value){
 }
 
 function ajustarImagenes(){
-    const images = document.querySelectorAll('.plan-image img');
+    const images = document.querySelectorAll('.plan-image img')
 
-    let maxHeight = images[0].height;
-    let minWidth = images[0].width;
+    let maxHeight = images[0].height
+    let minWidth = images[0].width
 
     images.forEach(image => {
     if (image.height < maxHeight) {
-        maxHeight = image.height;
+        maxHeight = image.height
     }
     if (image.width < minWidth) {
-        minWidth = image.width;
+        minWidth = image.width
     }
-    });
+    })
 
     images.forEach(image => {
-        image.style.height = `${maxHeight + 50}px`;
-        image.style.width = `${minWidth + 100}px`;
-    });
+        image.style.height = `${maxHeight + 50}px`
+        image.style.width = `${minWidth + 100}px`
+    })
 }
 
 slider.addEventListener("input", (event) => {
@@ -59,7 +59,7 @@ ajustarImagenes()
 
 
 function mostrarSwipper() {
-    let swiper = document.querySelector('.swiper-wrapper');
+    let swiper = document.querySelector('.swiper-wrapper')
     swiper.innerHTML = `
         <div class="swiper-slide">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript logo"  />
@@ -89,20 +89,20 @@ function mostrarSwipper() {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="php logo"  />
             <p>PHP</p>
         </div>
-    `;
+    `
 
-    const images = document.querySelectorAll('.swiper-slide img');
+    const images = document.querySelectorAll('.swiper-slide img')
     images.forEach(image => {
         image.addEventListener('mouseover', () => {
-            image.nextElementSibling.style.transition = 'opacity 0.3s ease';
-            image.nextElementSibling.style.opacity = '1';
-        });
+            image.nextElementSibling.style.transition = 'opacity 0.3s ease'
+            image.nextElementSibling.style.opacity = '1'
+        })
 
         image.addEventListener('mouseout', () => {
-            image.nextElementSibling.style.transition = 'opacity 0.3s ease';
-            image.nextElementSibling.style.opacity = '0';
-        });
-    });
+            image.nextElementSibling.style.transition = 'opacity 0.3s ease'
+            image.nextElementSibling.style.opacity = '0'
+        })
+    })
 }
 
 mostrarSwipper()
@@ -137,7 +137,7 @@ const swiper = new Swiper('.swiper', {
             spaceBetween: 25
         },
     }
-});
+})
 
 function showBuyCard(i){
     let title = document.getElementById('title')
@@ -203,6 +203,13 @@ function showBuyCard(i){
 
 // Menu
 function toggleMenu(){
-    let menu = document.querySelector('.menu-responsive');
-    menu.classList.toggle('active');
+    let button = document.getElementById('menu-toggle')
+    let menu = document.querySelector('.menu-responsive')
+    menu.classList.toggle('active')    
+    if (button.innerHTML == `☰`) {        
+        button.innerHTML = `X`
+    } else {
+        button.innerHTML = `☰`
+        
+    }
 }

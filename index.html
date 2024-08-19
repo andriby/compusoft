@@ -23,7 +23,7 @@
 
         <div class="container-hero">
             <div class="hero-logo">
-                <img src="./assets/logo-white.png" alt="Logo de Compusoft">
+                <img src="./assets/logo-white.png" class="img-fluid" alt="Logo de Compusoft">
             </div>
 
             <h1 class="text-uppercase hero-title ">Desarrollos a la medida</h1>
@@ -47,7 +47,7 @@
     <header class="sticky-top">
         <div class="nav">
             <nav>
-                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                <button id="menu-toggle" class="menu-toggle" onclick="toggleMenu()">☰</button>
                 <ul id="menu">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="./pages/prices.html">Precios</a></li>
@@ -72,7 +72,7 @@
 
     <main>
         <section id="why" class="container">
-            <div class="reason-container" data-aos="fade-left" class="why-content" data-aos-duration="500">
+            <div class="reason-container" data-aos="fade" class="why-content" data-aos-duration="500">
                 <div class="reasons">
                     <h2>¿Por que elegirnos?</h2>
                     <p class="reason-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, harum.
@@ -125,7 +125,7 @@
                         </dl=>
                 </div>
             </div>
-            <div id="image-reason" data-aos="fade-right" class="why-image" data-aos-duration="500">
+            <div id="image-reason" data-aos="fade" class="why-image" data-aos-duration="500">
                 <img src="./assets/hero-img.jpg" alt="imagen de por que elegirnos">
             </div>
         </section>
@@ -148,7 +148,7 @@
             <div id="plan">
             </div>
             <div class="plan-images">
-                <div class="plan-item" data-aos="fade-right">
+                <div class="plan-item" data-aos="fade">
                     <div class="plan-image">
                         <img class="img-fluid" src="./assets/programador.jpg" alt="Programacion">
                     </div>
@@ -160,7 +160,7 @@
                     </div>
                     <!-- <h3>Ingenieria de Software</h3> -->
                 </div>
-                <div class="plan-item" data-aos="fade-left">
+                <div class="plan-item" data-aos="fade">
                     <div class="plan-image">
                         <img class="img-fluid" src="./assets/curso.jpg" alt="Cursos">
                     </div>
@@ -214,7 +214,7 @@
             </div>
 
             <div class="card-group">
-                <div class="card-service" data-aos="zoom-in-right">
+                <div class="card-service" data-aos="zoom-in">
                     <div class="card-header">
                         <i class="fa-brands fa-uncharted" style="font-size: 5rem;"></i>
                     </div>
@@ -226,7 +226,7 @@
                     </div>
                     <div class="card-title">Coste total aproximado del Sistema</div>
                 </div>
-                <div class="card-service" data-aos="zoom-in-left">
+                <div class="card-service" data-aos="zoom-in">
                     <div class="card-header">
                         <i class="fa-solid fa-chalkboard-user"></i>
                     </div>
@@ -240,28 +240,28 @@
             <hr style="width: 80%;">
             <div class="contact-content container-fluid">
 
-                <div class="contact-info" data-aos="fade-right">
+                <div class="contact-info" data-aos="fade">
                     <div class="contact-item">
                         <img src="./assets/800px-Baruta,_Caracas..jpg" class="img-fluid">
                         <div>
                             <h3>Caracas, Venezuela</h3>
-                            <p>Lorem ipsum dolor sit amet. <br> Lorem ipsum dolor sit.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
                             <br>
-                            <p><b>TLF:</b> +58 424-3211234</p>
+                            <p class="tlf"><b>TLF:</b><br class="br-tlf"> +58 424-3211234</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <img src="./assets/libertador.jpg" class="img-fluid">
                         <div>
                             <h3>Caracas, Venezuela</h3>
-                            <p>Lorem ipsum dolor sit amet. <br> Lorem ipsum dolor sit.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
                             <br>
-                            <p><b>TLF:</b> +58 424-3211234</p>
+                            <p class="tlf"><b>TLF:</b><br class="br-tlf"> +58 424-3211234</p>
                         </div>
                     </div>
                 </div>
 
-                <form class="form-group" id="contact-form" data-aos="fade-left">
+                <form class="form-group" id="contact-form" data-aos="fade">
                     <div>
                         <label for="name">Nombre</label>
                         <input type="text" id="name" name="name" class="form-control" placeholder="Nombre">

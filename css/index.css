@@ -213,8 +213,19 @@ header ul li a {
 }
 
 .hero-logo {
-    width: 25rem;
     margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-logo{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .hero-logo{
+        width: 100%;
+    }
 }
 
 .hero-image {
@@ -252,6 +263,12 @@ header ul li a {
     text-align: center;
     font-family: "Open Sans", sans-serif;
     margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px){
+    .hero-title{
+        font-size: 1.8rem;
+    }
 }
 
 .typing {
@@ -908,6 +925,7 @@ input[type="range"] {
     font-family: "Inter", sans-serif;
     font-weight: 300;
     color: #00000099;
+    margin-bottom: 0;
 }
 
 .contact-info .contact-item .img-fluid {
@@ -928,28 +946,49 @@ input[type="range"] {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
-
-    .contact-item{
-        flex-direction: column;
-    }
-
-    .contact-info .contact-item p {
-        margin-bottom: 0;
-    }
-
+@media only screen and (max-width: 992px){
     .contact-content {
         flex-direction: column;
         gap: 4rem;
         padding: 2rem 0;
     }
 
+    .contact-info {
+        flex-direction: row;
+        width: 100%;
+    }
+
     .form-group {
         width: 90%;
     }
+}
 
-    .contact-info {
-        width: 90%;
+@media only screen and (max-width: 768px) {
+    .contact-info .contact-item p {
+        margin-bottom: 0;
+    }
+
+    .contact-info .contact-item{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .contact-item h3{
+        padding-top: 0;
+    }
+
+    .tlf{
+        margin-top: -20px;
+    }
+
+    .br-tlf{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .contact-info{
+        flex-direction: column;
     }
 }
 
