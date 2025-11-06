@@ -12,18 +12,18 @@ import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import { SITE } from "@data/constants";
 
-// Fetching all the product related content and sorting it by main.id
-const product: CollectionEntry<"products">[] = (
-  await getCollection("products", ({ id }) => {
+// Fetching all the project related content and sorting it by main.id
+const project: CollectionEntry<"proyectos">[] = (
+  await getCollection("proyectos", ({ id }) => {
     return id.startsWith("en/");
   })
 ).sort(
-  (a: CollectionEntry<"products">, b: CollectionEntry<"products">) =>
+  (a: CollectionEntry<"proyectos">, b: CollectionEntry<"proyectos">) =>
     a.data.main.id - b.data.main.id
 );
 
 // Define variables for page content
-const title: string = "Products";
+const title: string = "Proyectos";
 const subTitle: string =
   "Explore the durability and precision of ScrewFast tools, designed for both professionals and enthusiasts. Each of our products is crafted with precision and built to last, ensuring you have the right tool for every job.";
 
@@ -61,7 +61,7 @@ const testimonials = [
   },
 ];
 
-const pageTitle: string = `Products | ${SITE.title}`;
+const pageTitle: string = `Proyectos | ${SITE.title}`;
 const metaDescription =
   "Explore the durability and precision of ScrewFast tools, designed for both professionals and enthusiasts.";
 const ogTitle = "Hardware Tools | ScrewFast";
@@ -74,11 +74,10 @@ const ogTitle = "Hardware Tools | ScrewFast";
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/products",
-    url: "https://screwfast.uk/products",
-    name: "Hardware Tools | ScrewFast",
-    description:
-      "Explore the durability and precision of ScrewFast tools, designed for both professionals and enthusiasts.",
+    "@id": "https://screwfast.uk/proyectos",
+    url: "https://screwfast.uk/proyectos",
+    name: "Proyectos | ScrewFast",
+    description: "Explora la durabilidad y precisión de los proyectos ScrewFast.",
     isPartOf: {
       "@type": "WebSite",
       url: "https://screwfast.uk",
@@ -113,12 +112,12 @@ const ogTitle = "Hardware Tools | ScrewFast";
     Maps through all product entries and displays them with either CardSmall or CardWide based on their position. */}
     <section class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
       {
-        product.map((product, index) => {
+        project.map((project, index) => {
           const position = index % 4;
           if (position === 0 || position === 3) {
-            return <CardSmall product={product} />;
+            return <CardSmall product={project} />;
           } else {
-            return <CardWide product={product} />;
+            return <CardWide product={project} />;
           }
         })
       }

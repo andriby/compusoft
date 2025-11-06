@@ -1,28 +1,27 @@
 // An array of links for navigation bar
 const navBarLinks = [
-  { name: "Home", url: "/" },
-  { name: "Products", url: "/products" },
-  { name: "Services", url: "/services" },
-  { name: "Blog", url: "/blog" },
-  { name: "Contact", url: "/contact" },
+  { name: "Principal", url: "/compusoft/" },
+  { name: "Proyectos", url: "/compusoft/proyectos" },
+  { name: "Servicios", url: "/compusoft/services" },
+  { name: "Blog", url: "/compusoft/blog" },
+  { name: "Contacto", url: "/compusoft/contact" },
 ];
 // An array of links for footer
 const footerLinks = [
   {
     section: "Ecosystem",
     links: [
-      { name: "Documentation", url: "/welcome-to-docs/" },
-      { name: "Tools & Equipment", url: "/products" },
-      { name: "Construction Services", url: "/services" },
+      { name: "Tools & Equipment", url: "/compusoft/proyectos" },
+      { name: "Construction Services", url: "/compusoft/services" },
     ],
   },
   {
     section: "Company",
     links: [
-      { name: "About us", url: "#" },
-      { name: "Blog", url: "/blog" },
-      { name: "Careers", url: "#" },
-      { name: "Customers", url: "#" },
+      { name: "About us", url: "/compusoft/#" },
+      { name: "Blog", url: "/compusoft/blog" },
+      { name: "Careers", url: "/compusoft/#" },
+      { name: "Customers", url: "/compusoft/#" },
     ],
   },
 ];

@@ -12,12 +12,12 @@ import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 
 // Fetching all the product related content and sorting it by main.id
-const product: CollectionEntry<"products">[] = (
-  await getCollection("products", ({ id }) => {
+const product: CollectionEntry<"proyectos">[] = (
+  await getCollection("proyectos", ({ id }) => {
     return id.startsWith("fr/");
   })
 ).sort(
-  (a: CollectionEntry<"products">, b: CollectionEntry<"products">) =>
+  (a: CollectionEntry<"proyectos">, b: CollectionEntry<"proyectos">) =>
     a.data.main.id - b.data.main.id
 );
 
@@ -73,8 +73,8 @@ const ogTitle = "Outils Matériels | ScrewFast";
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/fr/products",
-    url: "https://screwfast.uk/fr/products",
+    "@id": "https://screwfast.uk/fr/proyectos",
+    url: "https://screwfast.uk/fr/proyectos",
     name: "Outils Matériels | ScrewFast",
     description:
       "Explorez la durabilité et la précision des outils ScrewFast, conçus aussi bien pour les professionnels que pour les passionnés.",
@@ -112,7 +112,7 @@ const ogTitle = "Outils Matériels | ScrewFast";
         noArrow={true}
       />
     </div>
-    {/* Displaying products in alternating styles. Alternative product gets different card styling. */}
+    {/* Displaying proyectos in alternating styles. Alternative product gets different card styling. */}
     {/* Maps through all product entries and displays them with either CardSmall or CardWide based on their position. */}
     <section class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
       {
