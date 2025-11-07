@@ -9,19 +9,18 @@ const navBarLinks = [
 // An array of links for footer
 const footerLinks = [
   {
-    section: "Ecosystem",
+    section: "Nuestro trabajo",
     links: [
-      { name: "Tools & Equipment", url: "/compusoft/proyectos" },
-      { name: "Construction Services", url: "/compusoft/services" },
+      { name: "Proyectos", url: "/compusoft/proyectos" },
+      { name: "Servicios", url: "/compusoft/services" },
     ],
   },
   {
-    section: "Company",
+    section: "Empresa",
     links: [
-      { name: "About us", url: "/compusoft/#" },
+      { name: "Sobre Nosotros", url: "/compusoft/#" },
       { name: "Blog", url: "/compusoft/blog" },
-      { name: "Careers", url: "/compusoft/#" },
-      { name: "Customers", url: "/compusoft/#" },
+      { name: "Clientes", url: "/compusoft/#" },
     ],
   },
 ];

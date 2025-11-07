@@ -523,4 +523,20 @@ export const Icons = {
     strokeLinejoin: "round",
     stroke: "currentColor",
   },
+  codeTag: {
+    paths: [
+      {
+        d: "M7 8l-4 4 4 4M17 8l4 4-4 4M14 4l-4 16",
+      },
+    ],
+    class: "h-6 w-6 shrink-0 text-neutral-700 dark:text-neutral-300",
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    stroke: "currentColor",
+  },
 };
