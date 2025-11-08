@@ -4,7 +4,9 @@ import Meta from "@components/Meta.astro";
 import Navbar from "@components/sections/navbar&footer/Navbar.astro";
 import FooterSection from "@components/sections/navbar&footer/FooterSection.astro";
 import { SITE } from "@data/constants";
+// import { ClientRouter } from "astro:transitions";
 import "@styles/global.css";
+import ClientRouter from "astro/components/ClientRouter.astro";
 
 // Setting expected props
 const {
@@ -28,7 +30,7 @@ interface Props {
 ---
 
 <html lang={lang} class="scrollbar-hide lenis lenis-smooth scroll-pt-16">
-  <head>
+  <>
     {/* Adding metadata to the HTML document */}
     <Meta
       meta={meta}
@@ -40,19 +42,24 @@ interface Props {
     <title>{title}</title>
     <script is:inline>
       // Script to handle dark mode. It will check if the theme is stored in localStorage or if dark theme is preferred by system settings
-      if (
-        localStorage.getItem("hs_theme") === "dark" ||
-        (!("hs_theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
+      function applyTheme() {
+        const theme = localStorage.getItem("hs_theme");
+        if (
+          theme === "dark" ||
+          (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
       }
+      applyTheme();
+      window.addEventListener("astro:after-swap", applyTheme); // Vuelve a aplicar el tema tras navegación
     </script>
     <script>
       import "@scripts/lenisSmoothScroll.js";
     </script>
+    <ClientRouter />
   </head>
   <body
     class="bg-neutral-200 selection:bg-yellow-400 selection:text-neutral-700 dark:bg-neutral-800 flex flex-col min-h-screen"

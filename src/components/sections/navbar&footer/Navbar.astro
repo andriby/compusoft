@@ -1,11 +1,12 @@
 ---
 //Import relevant dependencies
+import { Image } from "astro:assets";
 import ThemeIcon from "@components/ThemeIcon.astro";
 import NavLink from "@components/ui/links/NavLink.astro";
 import enStrings from "@utils/navigation.ts";
 import frStrings from "@utils/fr/navigation.ts";
-import logo from "@images/starlight/screwfast_logo.svg"; 
-import logo_dark from "@images/starlight/screwfast_logo_dark.svg"; 
+import logo from "@images/starlight/screwfast_logo.avif"; 
+import logo_dark from "@images/starlight/screwfast_logo_dark.avif"; 
 
 
 // Select the correct translation based on the page's lang prop:
@@ -29,8 +30,8 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/compusoft/";
         href={homeUrl}
         aria-label="Brand"
       >
-        <img src={logo.src} alt="Logo de la marca" class="block h-auto w-24 dark:hidden" />
-        <img src={logo_dark.src} alt="Logo de la marca" class="hidden h-auto w-24 dark:block" />      
+        <Image src={logo} alt="Logo" class="block h-auto w-24 dark:hidden" />
+        <Image src={logo_dark} alt="Logo Dark" class="hidden h-auto w-24 dark:block" />
       </a>
       <!-- Collapse toggle for smaller screens -->
       <div class="ml-auto mr-5 md:hidden">
