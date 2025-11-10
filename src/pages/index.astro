@@ -2,20 +2,18 @@
 // Import the necessary components
 import MainLayout from "@/layouts/MainLayout.astro";
 import HeroSection from "@components/sections/landing/HeroSection.astro";
-import HeroSectionAlt from "@components/sections/landing/HeroSectionAlt.astro";
 import ClientsSection from "@components/sections/landing/ClientsSection.astro";
 import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
 import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
 import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
 import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/misc/FAQ.astro";
-import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import pricing from "@data/pricing.json";
 import featureImage from "@images/features-image.avif";
-import construction from "@images/construction-image.avif";
-import tools from "@images/automated-tools.avif";
+import code_editor from "@images/editor_codigo.avif";
+import code from "@images/code.avif";
 import dashboard from "@images/dashboard-image.avif";
 import { partnersData } from "@/data_files/constants";
 
@@ -36,7 +34,7 @@ const avatarSrcs: Array<string> = [
     primaryBtn="Comienza a explorar"
     primaryBtnURL="/compusoft/proyectos"
     secondaryBtn="Contactar al equipo de ventas"
-    secondaryBtnURL="/contact"
+    secondaryBtnURL="/compusoft/contact"
     withReview={true}
     avatars={avatarSrcs}
     rating=`<span class="font-bold">4.8</span> / 5`
@@ -67,7 +65,7 @@ const avatarSrcs: Array<string> = [
         content:
           "Potencie sus proyectos con las herramientas de vanguardia de Compusoft. Experimente una mayor eficiencia en la gestión del desarrollo con nuestras sofisticadas soluciones.",
         svg: "tools",
-        src: tools,
+        src: code,
         alt: "Yellow and black heavy equipment on brown grass field",
         first: true,
       },
@@ -85,7 +83,7 @@ const avatarSrcs: Array<string> = [
         content:
           "Minimiza la complejidad y maximiza la productividad. Las soluciones robustas de Compusoft están diseñadas para optimizar tu negocio, ofreciendo resultados que destacan por su excelencia.",
         svg: "house",
-        src: construction,
+        src: code_editor,
         alt: "Gray metal building frame near tower crane during daytime",
       },
     ]}
