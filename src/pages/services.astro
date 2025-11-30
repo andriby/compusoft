@@ -36,66 +36,69 @@ interface Article {
 const articles: Article[] = [
   {
     isRightSection: true,
-    title: "Delivering Expert Guidance",
+    title: "Desarrollo de Software a Medida",
     subTitle:
-      "Embarking on a construction project can be overwhelming. With our professional consultation services, we guide you through every stage, ensuring you make informed decisions. Whether you are a DIY enthusiast or a skilled contractor, our experts are on hand to offer tailored advice on product selection, project scope, and compliance with local regulations.",
+      "Creamos soluciones digitales personalizadas para tu empresa, desde aplicaciones web hasta sistemas internos. Nuestro equipo de expertos te acompaña en todo el proceso, garantizando funcionalidad, escalabilidad y seguridad.",
     single: false,
     imgOne: blueprints,
-    imgOneAlt: "Blueprints and digital tablet with construction plans.",
+    imgOneAlt: "Pantalla con planos de software y arquitectura digital.",
     imgTwo: personWorking,
-    imgTwoAlt: "Person working in the office",
+    imgTwoAlt: "Desarrollador trabajando en código en la oficina",
   },
   {
     isRightSection: false,
-    title: "Transforming Designs into Reality",
+    title: "Servicios de Hosting y Dominio",
     subTitle:
-      "Our skilled craftsmen bring precision and excellence to every construction project. From minor installations to substantial structural work, ScrewFast offers reliable construction services to turn your plans into tangible outcomes. We ensure the highest standards of safety and workmanship, utilizing top-quality tools and materials from our extensive inventory.",
-    img: beforeAfter,
-    imgAlt: "Construction site before and after",
+      "Ofrecemos alojamiento web confiable, rápido y seguro para tu página o aplicación. Incluye registro de dominio, certificados SSL y soporte técnico especializado para que tu negocio esté siempre disponible en internet.",
+    img: aerialView,
+    imgAlt: "Vista aérea de servidores y centros de datos",
     btnExists: true,
-    btnTitle: "Learn More",
+    btnTitle: "Ver planes de hosting",
     btnURL: "#",
   },
   {
     isRightSection: true,
-    title: "Navigating Projects with Professional Oversight",
+    title: "Venta y Mantenimiento de Impresoras",
     subTitle:
-      "Effective project management is at the heart of any successful build. ScrewFast provides thorough planning and robust management services that keep your project on time and within budget. Let us handle the complexities of workflow coordination, resource allocation, and stakeholder communication while you focus on your vision.",
+      "Contamos con impresoras de las mejores marcas para tu oficina o negocio. Además, ofrecemos servicio técnico, instalación, reparación y mantenimiento preventivo para asegurar el funcionamiento óptimo de tus equipos.",
     single: false,
-    imgOne: constructionWorkers,
-    imgOneAlt: "Construction workers orchestrating a project",
-    imgTwo: aerialView,
-    imgTwoAlt: "Aerial view of managed construction",
+    imgOne: progressBuilding,
+    imgOneAlt: "Técnico revisando impresora en empresa",
+    imgTwo: underConstruction,
+    imgTwoAlt: "Impresora en proceso de mantenimiento",
+    btnExists: true,
+    btnTitle: "Solicitar servicio",
+    btnURL: "#",
   },
   {
     isRightSection: false,
-    title: "Ensuring Long-lasting Performance",
+    title: "Consultoría y Soporte Técnico",
     subTitle:
-      "Our commitment to your project doesn't end at completion. ScrewFast offers ongoing maintenance and support services to ensure your construction's longevity and performance. From regular check-ups to emergency assistance, our responsive team is there to provide seamless support.",
+      "Te asesoramos en la transformación digital de tu empresa, optimización de procesos y selección de tecnología. Nuestro soporte técnico está disponible para resolver cualquier incidencia de software, hosting o impresoras.",
     img: usingTools,
     imgAlt:
-      "Man in orange and black vest wearing white helmet holding yellow and black power tool",
+      "Especialista brindando soporte técnico a cliente empresarial",
   },
   {
     isRightSection: true,
-    title: "Crafting Bespoke Strategies for Unique Challenges",
+    title: "Soluciones Empresariales Integrales",
     subTitle:
-      "For our larger enterprise clients, ScrewFast offers custom solutions designed to meet specific industry challenges. By understanding your unique needs, we engineer tailored strategies aimed at optimizing your operations, enhancing efficiency, and driving your business forward.",
+      "Integramos todos nuestros servicios para empresas que buscan digitalizarse, mejorar su infraestructura tecnológica y mantener sus equipos funcionando al máximo nivel. Adaptamos nuestras soluciones a tus necesidades específicas.",
     single: false,
-    imgOne: progressBuilding,
-    imgOneAlt: "In progress building structure",
-    imgTwo: underConstruction,
-    imgTwoAlt: "Brown and gray building under construction",
+    imgOne: beforeAfter,
+    imgOneAlt: "Comparación de procesos antes y después de la digitalización",
+    imgTwo: constructionWorkers,
+    imgTwoAlt: "Equipo colaborando en proyecto de software",
     btnExists: true,
-    btnTitle: "Read more",
+    btnTitle: "Contactar asesor",
     btnURL: "#",
   },
 ];
 
-const pageTitle: string = `Services | ${SITE.title}`;
+const pageTitle: string = `Servicios | ${SITE.title}`;
 const metaDescription =
-  "Uniting expertise with your vision, ScrewFast provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.";
-const ogTitle = "Expert Consultation Services | ScrewFast";
+  "Compusoft ofrece desarrollo de software, hosting profesional, venta y mantenimiento de impresoras, y consultoría tecnológica para empresas. Soluciones integrales para tu transformación digital.";
+const ogTitle = "Servicios de Software, Hosting e Impresoras | Compusoft";
 ---
 
 <MainLayout
@@ -105,11 +108,11 @@ const ogTitle = "Expert Consultation Services | ScrewFast";
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/services",
-    url: "https://screwfast.uk/services",
-    name: "Expert Consultation Services | ScrewFast",
+    "@id": "https://compusoft.uk/services",
+    url: "https://compusoft.uk/services",
+    name: "Servicios de Consultoría Experta | Compusoft",
     description:
-      "Uniting expertise with your vision, ScrewFast provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.",
+      "Uniendo experiencia con su visión, Compusoft ofrece un servicio excepcional y soluciones integrales en la industria de ferretería y construcción, desde la consulta hasta la finalización del proyecto.",
     isPartOf: {
       "@type": "WebSite",
       url: "https://screwfast.uk",
@@ -122,10 +125,10 @@ const ogTitle = "Expert Consultation Services | ScrewFast";
 >
   {/* MainSection is the introductory section of the page, it also contains a CTA button */}
   <MainSection
-    title="Uniting Expertise with Your Vision"
-    subTitle="At ScrewFast, we take pride in providing comprehensive solutions and exceptional service in the hardware and construction industry. Our experienced team is dedicated to supporting your project from inception to completion with a range of specialized services."
+    title="Soluciones digitales y tecnológicas para tu empresa"
+    subTitle="En Compusoft, desarrollamos software a medida, ofrecemos servicios de hosting, venta y mantenimiento de impresoras, y consultoría tecnológica. Nuestro equipo te acompaña en cada etapa para que tu negocio crezca y se mantenga competitivo."
     btnExists={true}
-    btnTitle="Schedule a Consultation"
+    btnTitle="Solicitar asesoría"
     btnURL="#"
   />
   {/* RightSection and LeftSection contain details about various services along with pertinent imagery.
@@ -166,22 +169,22 @@ const ogTitle = "Expert Consultation Services | ScrewFast";
   }
   {/* FeaturesStats section showcases essential stats valuable to users */}
   <FeaturesStats
-    title="By the Numbers"
-    subTitle="Our commitment to quality and reliability is evident in every project we undertake. At ScrewFast, we are dedicated to delivering industry-leading services that ensure your construction projects are built to last."
-    mainStatTitle="96%"
-    mainStatSubTitle="of our clients rate their experience with ScrewFast as exceptional"
+    title="Nuestros resultados"
+    subTitle="La satisfacción y el crecimiento de nuestros clientes es nuestro mayor logro. Compusoft se compromete a brindar servicios tecnológicos confiables y de alta calidad."
+    mainStatTitle="98%"
+    mainStatSubTitle="de nuestros clientes recomiendan Compusoft por su atención y resultados"
     stats={[
       {
-        stat: "99.8%",
-        description: "project completion rate",
+        stat: "99.9%",
+        description: "uptime garantizado en hosting",
       },
       {
-        stat: "5,000+",
-        description: "successful installations",
+        stat: "1,200+",
+        description: "impresoras instaladas y mantenidas",
       },
       {
-        stat: "85%",
-        description: "client growth year-over-year",
+        stat: "90%",
+        description: "clientes con mejoras en procesos digitales",
       },
     ]}
   />
