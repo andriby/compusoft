@@ -7,14 +7,14 @@ import RightSection from "@components/ui/blocks/RightSection.astro";
 import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
 
 // Import necessary images
-import blueprints from "@images/blueprints-image.avif";
-import personWorking from "@images/person-working.avif";
-import beforeAfter from "@images/before-after.avif";
-import constructionWorkers from "@images/construction-workers.avif";
-import aerialView from "@images/aerial-view.avif";
-import usingTools from "@images/using-tools.avif";
-import progressBuilding from "@images/progress-building.avif";
-import underConstruction from "@images/under-construction.avif";
+import desarrollo1 from "@images/desarrollo1.avif";
+import desarrollo2 from "@images/desarrollo2.avif";
+import empresa1 from "@images/empresa1.avif";
+import empresa2 from "@images/empresa2.avif";
+import servidores from "@images/servidores.avif";
+import soporte_tecnico from "@images/soporte-tecnico.avif";
+import impresora1 from "@images/impresora1.avif";
+import impresora2 from "@images/impresora2.avif";
 import { SITE } from "@data/constants";
 
 interface Article {
@@ -40,9 +40,9 @@ const articles: Article[] = [
     subTitle:
       "Creamos soluciones digitales personalizadas para tu empresa, desde aplicaciones web hasta sistemas internos. Nuestro equipo de expertos te acompaña en todo el proceso, garantizando funcionalidad, escalabilidad y seguridad.",
     single: false,
-    imgOne: blueprints,
+    imgOne: desarrollo1,
     imgOneAlt: "Pantalla con planos de software y arquitectura digital.",
-    imgTwo: personWorking,
+    imgTwo: desarrollo2,
     imgTwoAlt: "Desarrollador trabajando en código en la oficina",
   },
   {
@@ -50,7 +50,7 @@ const articles: Article[] = [
     title: "Servicios de Hosting y Dominio",
     subTitle:
       "Ofrecemos alojamiento web confiable, rápido y seguro para tu página o aplicación. Incluye registro de dominio, certificados SSL y soporte técnico especializado para que tu negocio esté siempre disponible en internet.",
-    img: aerialView,
+    img: servidores,
     imgAlt: "Vista aérea de servidores y centros de datos",
     btnExists: true,
     btnTitle: "Ver planes de hosting",
@@ -62,9 +62,9 @@ const articles: Article[] = [
     subTitle:
       "Contamos con impresoras de las mejores marcas para tu oficina o negocio. Además, ofrecemos servicio técnico, instalación, reparación y mantenimiento preventivo para asegurar el funcionamiento óptimo de tus equipos.",
     single: false,
-    imgOne: progressBuilding,
+    imgOne: impresora1,
     imgOneAlt: "Técnico revisando impresora en empresa",
-    imgTwo: underConstruction,
+    imgTwo: impresora2,
     imgTwoAlt: "Impresora en proceso de mantenimiento",
     btnExists: true,
     btnTitle: "Solicitar servicio",
@@ -75,7 +75,7 @@ const articles: Article[] = [
     title: "Consultoría y Soporte Técnico",
     subTitle:
       "Te asesoramos en la transformación digital de tu empresa, optimización de procesos y selección de tecnología. Nuestro soporte técnico está disponible para resolver cualquier incidencia de software, hosting o impresoras.",
-    img: usingTools,
+    img: soporte_tecnico,
     imgAlt:
       "Especialista brindando soporte técnico a cliente empresarial",
   },
@@ -85,9 +85,9 @@ const articles: Article[] = [
     subTitle:
       "Integramos todos nuestros servicios para empresas que buscan digitalizarse, mejorar su infraestructura tecnológica y mantener sus equipos funcionando al máximo nivel. Adaptamos nuestras soluciones a tus necesidades específicas.",
     single: false,
-    imgOne: beforeAfter,
+    imgOne: empresa1,
     imgOneAlt: "Comparación de procesos antes y después de la digitalización",
-    imgTwo: constructionWorkers,
+    imgTwo: empresa2,
     imgTwoAlt: "Equipo colaborando en proyecto de software",
     btnExists: true,
     btnTitle: "Contactar asesor",

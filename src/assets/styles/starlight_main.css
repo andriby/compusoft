@@ -8,11 +8,11 @@
 }
 /* Dark mode colors. */
 :root {
-    --primary-button-hover: #1fc47c;
+    --primary-button-hover: #2b79d6;
     --backdrop-color: #272727cc;
-    --sl-color-accent: #1fc47c;
-    --sl-color-accent-high: #3dd598;
-    --sl-color-accent-low: #14532d;
+    --sl-color-accent: #2b79d6;
+    --sl-color-accent-high: #66a8ff;
+    --sl-color-accent-low: #153a6a;
     --sl-color-black: #181818;
     --sl-color-gray-1: #eee;
     --sl-color-gray-2: #c2c2c2;
@@ -21,19 +21,20 @@
     --sl-color-gray-5: #383838;
     --sl-color-gray-6: #272727;
     --sl-color-white: #fff;
-    --yellow-hsl: 150, 60%, 40%; /* verde */
-    --overlay-yellow: hsla(var(--yellow-hsl), .2);
+    /* HSL usado para overlays/gradientes: ahora en azul */
+    --yellow-hsl: 217, 65%, 52%; /* azul */
+    --overlay-yellow: hsla(var(--yellow-hsl), .12);
     --border: hsla(var(--border-neutral), .4);
     --border-neutral: 0, 0%, 25.1%;
 }
 
 /* Light mode colors. */
 :root[data-theme='light'] {
-    --primary-button-hover: #1fc47c;
+    --primary-button-hover: #2b79d6;
     --backdrop-color: #f6f6f699;
-    --sl-color-accent: #3dd598;
-    --sl-color-accent-high: #14532d;
-    --sl-color-accent-low: #a7f3d0;
+    --sl-color-accent: #66a8ff;
+    --sl-color-accent-high: #1b5ea8;
+    --sl-color-accent-low: #a7d6ff;
     --sl-color-black: #fff;
     --sl-color-gray-1: #272727;
     --sl-color-gray-2: #383838;
@@ -43,8 +44,8 @@
     --sl-color-gray-6: #eee;
     --sl-color-gray-7: #f6f6f6;
     --sl-color-white: #181818;
-    --yellow-hsl: 150, 60%, 40%; /* verde */
-    --border-yellow: 150, 60%, 88%;
+    --yellow-hsl: 217, 65%, 52%; /* azul */
+    --border-yellow: 217, 65%, 88%;
     --border: hsla(var(--border-yellow), .4);
 }
 

@@ -3,7 +3,6 @@
 import { Image } from "astro:assets";
 import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
 import SecondaryCTA from "@components/ui/buttons/SecondaryCTA.astro";
-import ReviewComponent from "@components/ui/blocks/ReviewComponent.astro";
 import heroImage from "@images/compusoft.avif";
 import heroImage_dark from "@images/compusoft_dark.avif";
 
@@ -71,9 +70,6 @@ interface Props {
     </div>
 
     <!-- Review Section: This section presents avatars, review ratings and the number of reviews -->
-    { withReview ? (
-    <ReviewComponent avatars={avatars} starCount={starCount} rating={rating} reviews={reviews} />
-    ) : "" }
 
   </div>
   <!-- Hero Image Section -->

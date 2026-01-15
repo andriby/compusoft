@@ -1,14 +1,12 @@
 // An array of links for navigation bar
 const navBarLinks = [
   { name: "Principal", url: "/compusoft/" },
-  { name: "Proyectos", url: "/compusoft/proyectos"},
   { name: "Servicios", url: "/compusoft/services", servicios: [
       { name: "Desarrollo de Software", url: "/compusoft/services#desarrollo-software" },
       { name: "Consultoría IT", url: "/compusoft/services#consultoria-it" },
       { name: "Soporte Técnico", url: "/compusoft/services#soporte-tecnico" },
       { name: "Hosting y Dominio", url: "/compusoft/services#hosting-dominio" },
   ] },
-  { name: "Blog", url: "/compusoft/blog" },
   { name: "Contacto", url: "/compusoft/contact" },
 ];
 // An array of links for footer
@@ -16,7 +14,6 @@ const footerLinks = [
   {
     section: "Nuestro trabajo",
     links: [
-      { name: "Proyectos", url: "/compusoft/proyectos" },
       { name: "Servicios", url: "/compusoft/services" },
     ],
   },
@@ -24,7 +21,6 @@ const footerLinks = [
     section: "Empresa",
     links: [
       { name: "Sobre Nosotros", url: "/compusoft/#" },
-      { name: "Blog", url: "/compusoft/blog" },
       { name: "Clientes", url: "/compusoft/#" },
     ],
   },

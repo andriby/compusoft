@@ -4,8 +4,8 @@ import { Image } from "astro:assets";
 import ThemeIcon from "@components/ThemeIcon.astro";
 import NavLink from "@components/ui/links/NavLink.astro";
 import enStrings from "@utils/navigation.ts";
-import logo from "@images/starlight/screwfast_logo.avif";
-import logo_dark from "@images/starlight/screwfast_logo_dark.avif";
+import logo from "@images/icon.png";
+import logo_dark from "@images/icon.png";
 
 // Select the correct translation based on the page's lang prop:
 const strings = enStrings;
@@ -28,11 +28,11 @@ const homeUrl = "/compusoft/";
         href={homeUrl}
         aria-label="Brand"
       >
-        <Image src={logo} alt="Logo" class="block h-auto w-24 dark:hidden" />
+        <Image src={logo} alt="Logo" class="block h-auto w-12 dark:hidden" />
         <Image
           src={logo_dark}
           alt="Logo Dark"
-          class="hidden h-auto w-24 dark:block"
+          class="hidden h-auto w-12 dark:block"
         />
       </a>
       <!-- Collapse toggle for smaller screens -->
